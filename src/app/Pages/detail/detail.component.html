@@ -1,0 +1,74 @@
+<div class="page">
+  <div class="page__hd">
+    <div class="iihnEg">
+      <ul class="SCVjc">
+        <li class="l3069o-1 iNtijz">
+          <a class="kmsNQR fUozSq">
+            <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" width="128" height="30" rotate="0"
+              stroke-width="1" viewBox="0 0 128 18" class="sc-1k15q70-0 bcIFEW">
+              <title>Zalora</title>
+              <path
+                d="M15.395.876l-.004-.655H.598v1.383h12.104L0 16.682v.552h15.481V15.85H2.699L15.395.876zM30.141.098l-8.07 17.136h1.73l2.717-5.781h8.177l2.717 5.781h1.73L31.072.098h-.931zm3.906 9.97h-6.883l3.43-7.342 3.453 7.342zM48.764.221h-1.649v17.013h10.128V15.85h-8.479V.221zM73.715 0C68.548 0 64.5 3.833 64.5 8.727s4.048 8.727 9.215 8.727c5.195 0 9.265-3.833 9.265-8.727S78.91 0 73.715 0zm.05 15.948c-4.215 0-7.517-3.172-7.517-7.221 0-4.049 3.302-7.221 7.517-7.221 4.187 0 7.466 3.172 7.466 7.221.001 4.049-3.279 7.221-7.466 7.221zm25.761-7.165c2.042-.819 3.077-2.196 3.077-4.098 0-2.796-2.185-4.464-5.844-4.464h-4.561v17.013h1.648V9.223h2.158c2.021 0 2.644.289 4.648 3.359l3.04 4.652h1.937l-4.034-6.019c-.76-1.11-1.373-1.959-2.069-2.432zm-5.679-7.179h2.636c2.819 0 4.372 1.103 4.372 3.105 0 2.018-1.535 3.129-4.321 3.129h-2.686V1.604h-.001zM119.93.098h-.931l-8.07 17.136h1.73l2.717-5.781h8.177l2.717 5.781H128L119.93.098zm2.976 9.97h-6.883l3.43-7.342 3.453 7.342z">
+              </path>
+            </svg>
+          </a>
+        </li>
+        <li class=" iNtijz">
+          <div class="fsdvWc">
+            <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" width="24" height="24" rotate="0"
+              stroke-width="1" viewBox="0 0 23 24" class="sc-1k15q70-0 bcIFEW">
+              <title>Search</title>
+              <g>
+                <path d="M16.202 17.647l5.456 5.851.731-.682-5.456-5.85z"></path>
+                <path
+                  d="M10.263 18.968c5.108 0 9.239-4.025 9.239-8.977s-4.13-8.977-9.24-8.977c-5.108 0-9.239 4.025-9.239 8.977s4.131 8.977 9.24 8.977zm0 1c-5.655 0-10.24-4.467-10.24-9.977 0-5.51 4.585-9.977 10.24-9.977s10.239 4.467 10.239 9.977c0 5.51-4.584 9.977-10.24 9.977z">
+                </path>
+              </g>
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="page__bd" style="margin-top: 50px;">
+    <swiper [config]="config">
+      <div class="swiper-wrapper">
+        <div *ngFor="let image of images; let i = index" (click) = "show(i)" class="swiper-slide">
+          <img src="{{image}}" />
+        </div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </swiper>
+    <div class="gRhiPN">
+      <a href="#" class="kALGao fUozSq">Hana</a>
+      <div class="ftrniJ">Zahava Tote Bag</div>
+      <div class="VqIJv liyOrb">
+        <span class="cYMvpk">Rp 999.000</span>
+        <span class="bvrvNS">Rp 349.650</span>
+      </div>
+      <div class="bqqECN fmDPTk">Hanya sisa 2 lagi</div>
+    </div>
+    <div class="eXBrxj">
+      <div class="lTTlq">
+        <div class="pUWrl">
+          Deskripsi
+        </div>
+        <div class="okWZn">
+          <div>- Tote bag bergaya kasual dalam nuansa earth tone<br>- Warna coklat<br>- Material kulit sintetis<br>-
+            Kompartemen utama dengan kancing magnet<br>- 1 kantong dalam dengan resleting<br>- Twin handle grab</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="show-images">
+  <div (click)="hide()" class="bNqCzd">
+      <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" width="24" height="24" rotate="0" stroke-width="1" viewBox="0 0 12 12" stroke="#909090" color="black" class="sc-1d3qm80-0 fPsXuL sc-1k15q70-0 bcIFEW"><title>Close</title><g><path d="M10.808 1.192l-9.623 9.623M1.192 1.192l9.623 9.623"></path></g></svg>
+  </div>
+  <div class="swiper-slide">
+    <img src="{{image}}" />
+  </div>
+</div>

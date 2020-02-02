@@ -1,0 +1,372 @@
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #020310;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.header-area {
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  background-color: #ffffff;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(15, 15, 15, 0.175);
+}
+
+.header-area-b {
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  background-color: #ffffff;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1110;
+  box-shadow: 0 2px 12px rgba(15, 15, 15, 0.175);
+}
+
+.back-button a {
+  color: #747794;
+  font-weight: bold;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+a, a:hover, a:focus {
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-decoration: none;
+  outline: 0 solid transparent;
+  box-shadow: none;
+  color: #100DD1;
+}
+
+.back-button a i {
+  font-size: 1.25rem;
+  margin-right: 0.25rem; }
+.back-button a:hover, .back-button a:focus {
+  color: #100DD1; }
+
+.page-heading h6 {
+    color: #747794;
+    font-size: 14px;
+}
+
+.filter-option {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  text-align: right;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.page-content-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-top: 50px;
+  margin-bottom: 58px;
+}
+
+.page-content-wrapper-b {
+  position: relative;
+  height: 100%;
+  background-color: rgba(114, 114, 114, 0.5);
+}
+
+.section-heading {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
+.section-heading h6 {
+  margin-bottom: 0;
+  color: #747794;
+}
+
+.layout-options {
+  position: relative;
+  z-index: 1;
+}
+
+.layout-options a:hover, .layout-options a:focus, .layout-options a.active {
+  color: #ffffff;
+  background-color: #ea4c62;
+}
+
+.layout-options a {
+  display: inline-block;
+  min-width: 30px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin-left: .5rem;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  color: #747794;
+  font-weight: bold;
+}
+
+.row {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.top-product-card {
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  border-color: #ebebeb;
+  border-radius: 0.5rem;
+}
+
+.card .card-body {
+  padding: 0.75rem;
+}
+
+.top-product-card .product-thumbnail img {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.top-product-card .product-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #020310;
+}
+
+.top-product-card .sale-price {
+  margin-bottom: 0.25rem;
+  color: #00b894;
+  font-weight: 700;
+}
+
+p {
+  color: #747794;
+  font-size: 14px;
+}
+
+.top-product-card .sale-price span {
+  color: #747794;
+  margin-left: 5px;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.top-product-card .product-rating {
+  font-size: 10px;
+  color: #ffaf00;
+}
+
+.top-product-card .product-rating i {
+  margin: 0 1px;
+}
+
+.top-product-card .btn {
+  padding: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  font-size: 1rem;
+  z-index: 9;
+}
+
+.top-product-card .btn i {
+  color: white;
+}
+
+.btn-success {
+  background-color: #00b894;
+  border-color: #00b894;
+}
+
+.btn-group-sm > .btn, .btn-sm {
+  padding: .25rem .75rem;
+  font-size: .75rem;
+  border-radius: .25rem;
+}
+
+.btn {
+  padding: .375rem 1rem;
+  font-size: 0.85rem;
+  border-radius: .4rem;
+}
+
+.btn, .btn:hover, .btn:focus {
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.weekly-product-card {
+  position: relative;
+  z-index: 1;
+}
+
+.weekly-product-card .product-thumbnail-side {
+  position: relative;
+  z-index: 1;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  width: 50%;
+  padding-right: 1rem;
+}
+
+.weekly-product-card .product-thumbnail-side .product-thumbnail {
+  position: relative;
+  z-index: 1;
+}
+
+.weekly-product-card .product-thumbnail-side .product-thumbnail img {
+  max-height: 300px;
+}
+
+.product-description {
+  position: relative;
+  z-index: 1;
+}
+
+.weekly-product-card .product-description {
+  position: relative;
+  z-index: 1;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  width: 50%;
+}
+
+.weekly-product-card .product-description .product-title {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 14px;
+  color: #020310;
+}
+
+.weekly-product-card .product-description .sale-price {
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  font-weight: 700;
+  color: #020310;
+}
+
+.product-description .sale-price {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ea4c62;
+}
+
+.weekly-product-card .product-description .sale-price i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #100DD1;
+  font-size: 10px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 0.25rem;
+}
+
+.weekly-product-card .product-description .sale-price span {
+  text-decoration: line-through;
+  color: #ea4c62;
+  margin-left: 0.25rem;
+  display: inline-block;
+}
+
+.product-description .sale-price span {
+  margin-left: 0.5rem;
+  color: #747794;
+  text-decoration: line-through;
+}
+
+.weekly-product-card .product-description .product-rating {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.weekly-product-card .product-description .product-rating i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #ffaf00;
+  font-size: 10px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 0.25rem;
+  padding-left: 1px;
+}
+
+.weekly-product-card .product-description a{
+  color: white;
+}
+
+.weekly-product-card .product-description .btn i {
+  font-size: 14px;
+  color: white;
+}
+
+.modal-full {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 1100;
+  background: transparent;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  overflow: hidden;
+}
+
+input.form-control {
+  height:30px !important;
+}
+
+.loader{
+  height: 100%;
+  width: 100%;
+}

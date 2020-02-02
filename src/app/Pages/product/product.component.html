@@ -1,0 +1,89 @@
+
+<div [hidden]="isShowSearch" class="header-area">
+  <div class="container h-100 d-flex align-items-center justify-content-between">
+    <div class="back-button">
+      <a [routerLink]="['/home']">
+        <i class="lni-arrow-left"></i>Back
+      </a>
+    </div>
+    <div class="page-heading">
+      <h6 class="mb-0">Shop Grid</h6>
+    </div>
+    <div (click)="toggleShowSearch()" class="filter-option">
+      <fa-icon [icon]="faSearch"></fa-icon>
+    </div>
+  </div>
+</div>
+
+<div class="page-content-wrapper">
+  <div class="top-products-area pt-3">
+    <div class="container">
+      <app-tabs>
+        <app-tab tabIcon="faThLarge">
+          <div class="row">
+            <div *ngFor="let product of products" class="col-6 col-sm-4">
+              <div class="card top-product-card mb-3">
+                <div class="card-body">
+                  <a href="#" class="product-thumbnail d-block">
+                    <img class="mb-2" src="{{product.img}}">
+                  </a>
+                  <a class="product-title d-block" href="single-product.html">{{product.name}}</a>
+                  <p class="sale-price">$13<span>$42</span></p>
+                  <div class="product-rating">
+                    <i class="lni-star-filled"></i>
+                    <i class="lni-star-filled"></i>
+                    <i class="lni-star-filled"></i>
+                    <i class="lni-star-filled"></i>
+                    <i class="lni-star-filled"></i>
+                  </div>
+                  <a class="btn btn-success btn-sm add2cart-notify" href="#"><i class="lni-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </app-tab>
+        <app-tab tabIcon="faThList">
+          <div class="row">
+            <div *ngFor="let product of products" class="col-12">
+              <div class="card weekly-product-card mb-3">
+                <div class="card-body d-flex align-items-center">
+                  <div class="product-thumbnail-side">
+                    <a class="product-thumbnail d-block" href="#">
+                      <img src="{{product.img}}" alt="">
+                    </a>
+                  </div>
+                  <div class="product-description">
+                    <a class="product-title d-block">{{product.name}}</a>
+                    <p class="sale-price"><i class="lni-dollar"></i>$64<span>$89</span></p>
+                    <div class="product-rating"><i class="lni-star-filled"></i>4.88 (39)</div>
+                    <a class="btn btn-success btn-sm add2cart-notify"><i class="mr-1 lni-cart"></i>Buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </app-tab>
+      </app-tabs>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="isShowSearch" class="modal-full">
+  <div class="header-area-b">
+    <div class="container h-100 d-flex align-items-center justify-content-between">
+      <div class="back-button">
+        <a (click)="toggleShowSearch()">
+          <i class="lni-arrow-left"></i>Back
+        </a>
+      </div>
+      <input [(ngModel)]="textSearch" (input)="onSearch($event.target.value)" (keydown)="onKeyDown()" type="text" autofocus class="form-control ml-3"/>
+    </div>
+  </div>
+  <div class="page-content-wrapper-b ">
+    <div *ngIf="isShowLoader" class="loader d-flex align-items-center justify-content-center">
+      <lottie-animation-view [options]="lottieConfig" [width]="200" [height]="200" (animCreated)="handleAnimation($event)">
+
+      </lottie-animation-view>
+    </div>
+  </div>
+</div>
